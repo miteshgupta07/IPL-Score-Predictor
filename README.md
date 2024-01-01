@@ -12,7 +12,48 @@ The IPL Score Predictor is a machine learning-based project that predicts the sc
 
 ## Screenshot
 
-![Screenshot (60)](https://github.com/miteshgupta07/temp/assets/111682782/34fa6771-39c0-4d67-8869-a876448a3583)
+![Screenshot (60)](https://github.com/miteshgupta07/IPL-Score-Predictor/assets/111682782/70eedc83-7528-4cb7-8ae0-2ca4af57cb74)
+
+
+## Prerequisites
+- Python 3.8
+- Dependencies List -
+  ## Prerequisites
+- Python 3.8
+- Dependencies List:
+- 
+  - **Scikit Learn:** A machine learning library in Python.
+    - Install: `pip install scikit-learn`
+    - Purpose: Utilized for implementing machine learning models and data preprocessing in the project.
+
+  - **Pandas:** A powerful data manipulation and analysis library.
+    - Install: `pip install pandas`
+    - Purpose: Used for handling and processing structured data.
+
+  - **NumPy:** A fundamental package for scientific computing with Python.
+    - Install: `pip install numpy`
+    - Purpose: Provides support for large, multi-dimensional arrays and matrices, along with mathematical functions to operate on these arrays.
+
+  - **Seaborn:** A data visualization library based on Matplotlib.
+    - Install: `pip install seaborn`
+    - Purpose: Enhances the visual appeal of statistical graphics created with Matplotlib.
+
+  - **Matplotlib:** A comprehensive library for creating static, interactive, and animated plots.
+    - Install: `pip install matplotlib`
+    - Purpose: Essential for generating various types of plots and charts.
+      
+  - **Datetime:** Python module for working with dates and times.
+    - Comes with the Python standard library, no separate installation required.
+    - Purpose: Used for manipulating dates and times in the project.
+
+  - **Flask:** A lightweight web application framework.
+    - Install: `pip install Flask`
+    - Purpose: Used for building web applications and serving the application in a server environment.
+
+  - **Pickle:** A module for serializing and deserializing Python objects.
+    - Comes with Python standard library, no separate installation required.
+    - Purpose: Used for saving and loading machine learning models or other Python objects.
+
 ## Acknowledgements
 
 
