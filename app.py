@@ -5,8 +5,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Load the Random Forest CLassifier model
-path="E:\\Data Science\\Project\\IPL Score Predictor App\\Code\\Model\\"
-model=pickle.load(open(path+"model.pkl", 'rb'))
+model=pickle.load(open("model.pkl", 'rb'))
 
 app = Flask(__name__)
 
