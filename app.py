@@ -4,23 +4,24 @@ import pickle
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-# Load the Random Forest CLassifier model
-model=pickle.load(open("model.pkl", 'rb'))
+# Load the Random Forest Classifier model
+model = pickle.load(open("model.pkl", 'rb'))
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-
 @app.route('/predict', methods=['POST'])
 def predict():
+    # Initialize an empty list to store input features
     temp_array = list()
 
+    # Check if the form has been submitted using POST method
     if request.method == 'POST':
 
+        # Extract batting team information from the form and update temp_array accordingly
         batting_team = request.form['batting-team']
         if batting_team == 'Chennai Super Kings':
             temp_array = temp_array + [1, 0, 0, 0, 0, 0, 0, 0]
@@ -38,7 +39,8 @@ def predict():
             temp_array = temp_array + [0, 0, 0, 0, 0, 0, 1, 0]
         elif batting_team == 'Sunrisers Hyderabad':
             temp_array = temp_array + [0, 0, 0, 0, 0, 0, 0, 1]
-
+            
+        # Extract bowling team information from the form and update temp_array accordingly
         bowling_team = request.form['bowling-team']
         if bowling_team == 'Chennai Super Kings':
             temp_array = temp_array + [1, 0, 0, 0, 0, 0, 0, 0]
@@ -57,6 +59,7 @@ def predict():
         elif bowling_team == 'Sunrisers Hyderabad':
             temp_array = temp_array + [0, 0, 0, 0, 0, 0, 0, 1]
 
+        # Extract other numerical features from the form and update temp_array accordingly
         overs = float(request.form['overs'])
         runs = int(request.form['runs'])
         wickets = int(request.form['wickets'])
@@ -65,11 +68,14 @@ def predict():
 
         temp_array = temp_array + [overs, runs, wickets, runs_in_prev_5, wickets_in_prev_5]
 
+        # Convert temp_array into a numpy array for prediction
         data = np.array([temp_array])
+        # Make a prediction using the loaded model
         my_prediction = int(model.predict(data)[0])
 
+        # Render the result.html template with lower and upper limit for the predicted score
         return render_template('result.html', lower_limit=my_prediction - 10, upper_limit=my_prediction + 5)
 
-
 if __name__ == '__main__':
+    # Run the Flask app in debug mode
     app.run(debug=True)
