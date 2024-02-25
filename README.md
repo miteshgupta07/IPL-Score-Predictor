@@ -58,8 +58,21 @@ The IPL Score Predictor is a machine learning-based project that predicts the sc
 
 
 - **Kaggle:** Thanks to Kaggle for providing historical IPL match data.
+- 
+- **Flask:** Special thanks to the Flask framework for making web development in Python elegant and straightforward.
 
-- **Scikit-learn:** Gratitude to the Scikit-learn community for creating a powerful machine learning library.
+- **Scikit-learn:** We appreciate the Scikit-learn library for providing powerful tools for predictive modeling.
+
+- **NumPy:** Heartfelt thanks to the NumPy community for developing a fundamental library that forms the backbone of numerical computing in Python.
+
+- **Pandas:** Special appreciation to the Pandas development team for creating an indispensable tool for data manipulation and analysis, making our project more efficient and effective.
+
+- **Matplotlib:** A big thanks to the Matplotlib developers for providing an extensive and flexible plotting library, adding a visual dimension to our data exploration and presentation.
+
+- **Seaborn:** We express our gratitude to the Seaborn community for enhancing our data visualization capabilities with a high-level interface to Matplotlib, making our plots more aesthetically pleasing and informative.
+
+- **Open Source Community:** Gratitude to the broader open-source community for sharing knowledge and fostering collaboration.
+
 ## Contact
 Email : mgmiteshgupta134@gmail.com
 
