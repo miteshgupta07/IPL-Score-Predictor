@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 # Load the Random Forest Classifier model
 model = pickle.load(open("model.pkl", 'rb'))
 
+# Initialize the app
 app = Flask(__name__)
 
 @app.route('/')
