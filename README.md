@@ -74,7 +74,7 @@ The IPL Score Predictor is a machine learning-based project that predicts the sc
 - **Open Source Community:** Gratitude to the broader open-source community for sharing knowledge and fostering collaboration.
 
 ## Contact
-Email : mgmiteshgupta134@gmail.com
+Email : miteshgupta2711@gmail.com
 
 Linkedin : https://www.linkedin.com/in/mitesh-gupta/
 
